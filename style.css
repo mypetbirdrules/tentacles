@@ -40,10 +40,14 @@ body {
   margin: 0px;
   padding: 0px 10px 0px 10px;
 } #headerArea #menuArea #menuList li:hover {
-  border-style: groove;
-  border-width: 10px;
-  border-color: #ad1457;
+  background-color: #ad1457;
+  padding-top: 28px;
+  padding-bottom: 28px;
 } #headerArea #menuArea #menuList li a {
   display: block;
   width: 60px;
+} #contentArea {
+  margin: 0px auto 0px auto;
+  padding: 0px;
+  width: 70%;
 }
