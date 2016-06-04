@@ -4,27 +4,6 @@
     <title>Project Tentacles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="/css/main.css" />
-
-    <script>
-      function addVideo(title, videoUrl, thumbnailImgUrl) {
-        var videoPreset = "<li id='video' class='video' onclick='location.href = '" + videoUrl + "'> \
-                             <a id='link' class='link' href=''> \
-                               <h3 id='title' class='title' class='title'>" + title + "</h3> \
-                               <img id='thumbnail' class='thumbnail' src='" + thumbnailImgUrl + "' alt='video-thumbnail' /> \
-                             </a> \
-                           </li>";
-
-        var videoList = document.getElementById("videos");
-        var newVideo = document.createElement("li");
-
-        //Append to video list
-        newVideo.innerHTML = videoPreset;
-        videoList.appendChild(newVideo);
-
-        //Reset form
-
-      }
-    </script>
   </head>
 
   <body>
@@ -47,14 +26,6 @@
       </nav>
 
       <main>
-        <div id="add-video">
-          <h3>Terribly Written "Video Add" feature. Page refresh gets rid of all added videos</h3>
-          Video Title: <input id="video-title" type="text" /><br /><br />
-          Video URL: <input id="video-url" type="text" /><br /><br />
-          Video Thumbnail URL: <input id="video-thumbnail" type="text" /><br /><br />
-          <button onclick="addVideo(document.getElementById('video-title').value, document.getElementById('video-url').value, document.getElementById('video-thumbnail').value)">Add Video</button>
-        </div>
-
         <ul id="videos" class="videos">
           <li id="video" class="video" onclick="location.href = ''">
             <a id="link" class="link" href="">
