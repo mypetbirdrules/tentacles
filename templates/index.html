@@ -2,8 +2,8 @@
 
 <html>
     <head>
-        <title>A well-made webpage</title>
-        <link rel="stylesheet" type="text/css" href="main_style.css">
+        <title>{{ title }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_style.css') }}">
     </head>
 
     <body>
