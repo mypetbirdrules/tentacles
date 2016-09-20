@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: overpass-light;
+    src: url("Overpass-Light.ttf");
+}
+
+/* Header */
+#content header {
+    height: 125px;
+    width: 100%;
+    min-width: 900px;
+    box-shadow: 0px 5px 10px #888888;
+}
+
+
+#left-header {
+    float: left;
+    width: 20%;
+    height: line-height: 125px;;
+    background-color: #AD1457;
+}
+
+#left-header h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 125px;
+    color: white;
+    font-family: overpass-light;
+    font-size: 30px;
+    text-align: center;
+}
+
+#right-header {
+    float: right;
+    width: 80%;
+    height: 125px;
+    background-color: #212121;
+}
+
+/* Nav bar */
+#right-header nav {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    overflow: hidden;
+}
+
+#right-header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+#right-header nav ul li {
+    margin: 100% 0px;
+    padding: 100% 0px;
+
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+#right-header nav ul a {
+    margin: 0px;
+    padding: 0px 20px;
+    font-family: overpass-light;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    /* Transition back to default state */
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -o-transition: all 500ms;
+    transition: all 500ms;
+}
+
+#right-header nav ul li:hover a {
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
+
+    -webkit-transition: padding 200ms;
+    -moz-transition: padding 200ms;
+    -o-transition: padding 200ms;
+    transition: padding 200ms;
+
+    padding: 100% 20px; /* Left and right padding stay the same */
+    background-color: #424242;
+}
