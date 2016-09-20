@@ -1,28 +1,5 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
 
-<html>
-    <head>
-        <title>{{ title }}</title>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_style.css') }}">
-    </head>
-
-    <body>
-        <div id="content">
-            <header>
-                <div id="left-header">
-                    <h1>Pr0nSite.com</h1>
-                </div>
-
-                <div id="right-header">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">Upload</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </div>
-    </body>
-</html>
+{% block main_content %}
+  <h1>About us!</h1>
+{% endblock %}
