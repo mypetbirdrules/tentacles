@@ -14,6 +14,6 @@ and forbids intrusive ads that spread malware to create a superior jacking exper
 ## How to start site locally
 
 >cd "pathToRepo"
->python init.py
+>python tentacles.py
 
 Go to "http://localhost:5000" in your browser
