@@ -12,6 +12,8 @@ and forbids intrusive ads that spread malware to create a superior jacking exper
 ![diagram2.png](https://raw.githubusercontent.com/mypetbirdrules/tentacles/master/diagram2.png)
 
 ## How to start site locally
-1. cd "pathToRepo"
-2. python init.py
-3. Go to "localhost:5000" in your browser
+
+>cd "pathToRepo"
+>python init.py
+
+Go to "http://localhost:5000" in your browser
