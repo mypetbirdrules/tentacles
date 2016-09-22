@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-
 from flask import Flask, render_template, redirect, url_for
-
-app = Flask(__name__)
+from tentacles import app
 
 @app.route("/")
 def index():
-    return render_template("index.html", title="A well built web page")
+    return render_template("index.html", title="Project Tentacles")
 
 @app.route("/index")
 def index2():
@@ -18,7 +16,4 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="The About Page")
-
-if __name__ == "__main__":
-    app.run(debug=True)
+    return render_template("about.html", title="About Project Tentacles")

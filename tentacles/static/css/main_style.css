@@ -100,5 +100,5 @@ body {
     transition: padding 200ms;
 
     padding: 100% 20px; /* Left and right padding stay the same */
-    background-color: #424242;
+    background-color: #333333;
 }
