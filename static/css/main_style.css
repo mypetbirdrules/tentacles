@@ -10,7 +10,7 @@ body {
 }
 
 /* Header */
-#content header {
+#page-container header {
     height: 125px;
     width: 100%;
     min-width: 900px;
