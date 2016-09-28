@@ -2,67 +2,49 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-@font-face {
-    font-family: overpass-light;
-    src: url("Overpass-Light.ttf");
-}
-
-/* Header */
-#page-container header {
-    height: 125px;
-    width: 100%;
-    min-width: 900px;
-    box-shadow: 0px 5px 10px #000000;
-}
-
-body {
     color: white;
+    font-family: overpass-light;
     background-color: #131313;
 }
 
-#left-header {
-    float: left;
-    width: 20%;
-    height: line-height: 125px;;
+/* Header */
+#main-header {
+    height: 150px;
+    width: 100%;
+    min-width: 900px;
     background-color: #AD1457;
+    box-shadow: 0px 5px 10px #000000;
 }
 
-#left-header h1 {
+#main-header h1 {
     margin: 0;
     padding: 0;
-    line-height: 125px;
-    font-family: overpass-light;
+    line-height: 75px;
     font-size: 30px;
     text-align: center;
 }
 
-#right-header {
-    float: right;
-    width: 80%;
-    height: 125px;
-    background-color: #212121;
-}
-
-/* Nav bar */
-#right-header nav {
+#main-header nav {
+    margin: 0;
+    padding: 0;
     display: flex;
     align-self: flex-end;
     align-items: center;
     justify-content: center;
-    height: 125px;
+    height: 80px;
+    width: 100%;
+    background-color: #212121;
     overflow: hidden;
 }
 
-#right-header nav ul {
+#main-header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
     list-style-type: none;
 }
 
-#right-header nav ul li {
+#main-header nav ul li {
     margin: 100% 0px;
     padding: 100% 0px;
 
@@ -72,10 +54,9 @@ body {
     transition: all 500ms;
 }
 
-#right-header nav ul a {
+#main-header nav ul a {
     margin: 0px;
     padding: 0px 20px;
-    font-family: overpass-light;
     font-size: 25px;
     color: white;
     text-decoration: none;
@@ -88,7 +69,7 @@ body {
     transition: all 500ms;
 }
 
-#right-header nav ul li:hover a {
+#main-header nav ul li:hover a {
     -webkit-transition: background-color 500ms;
     -moz-transition: background-color 500ms;
     -o-transition: background-color 500ms;
@@ -101,4 +82,8 @@ body {
 
     padding: 100% 20px; /* Left and right padding stay the same */
     background-color: #333333;
+}
+
+#main-content {
+    margin: 20px;
 }
