@@ -1,18 +1,41 @@
-#The Tentacle Project
+# The Tentacle Project
 
----------------------
+---
 
-The tentacle project is a small effort to build a clean, flat, and minimal porn site. Unlike other porn sites, The Tentacle Project has strict guidelines of ads
-and forbids intrusive ads that spread malware to create a superior jacking experience. Tired of porn sites as dirty and disgusting as your old gym sock? Help with The Tentacle Project today!  
+## Description
 
-## Design ideas for the future
+The Tentacle Project is an effort led by a small team to construct a well-designed, lightweight interactive porn website. Tentacles makes minimal use of bloated, 
+modern web design frameworks and principles. Because we love freedom, we've imposed a limit on Javascript, meaning the website will work perfectly with extensions 
+like LibreJS and NoScript. Concerned about privacy? Don't be. The Tentacles project is fully devoted to user privacy. Unlike other porn sites, we don't bombard 
+users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use bloated server-side scripting libraries. 
+
+### How is it made?
+
+* Python 3
+* HTML 5
+* CSS 3
+* Flask
+* Jinja2
+* SQLite3 (Extendable to more production-ready databases)
+ 
+---
+
+## Design Concepts
 
 ![diagram1.png](https://raw.githubusercontent.com/mypetbirdrules/tentacles/master/diagram.png)
 
 ![diagram2.png](https://raw.githubusercontent.com/mypetbirdrules/tentacles/master/diagram2.png)
 
-## How to start site locally
->cd "pathToRepo"
->python runserver.py
+---
 
-Go to "http://localhost:5000" in your browser
+## Non-production testing
+
+> # Start Flask's built-in testing server
+
+> ./runserver.py
+
+> # Open http://localhost:5000/ 
+
+---
+
+#### All changes should be submitted to this repository via pull request.
