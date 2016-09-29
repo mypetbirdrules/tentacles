@@ -30,11 +30,11 @@ users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use
 
 ## Non-production testing
 
-> # Start Flask's built-in testing server
+> Start Flask's built-in testing server
 
-> ./runserver.py
+> [user@~/tentacles/]$ ./runserver.py
 
-> # Open http://localhost:5000/ 
+> Open http://localhost:5000/ 
 
 ---
 
