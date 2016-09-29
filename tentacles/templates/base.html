@@ -5,21 +5,27 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main_style.css') }}">
         {% block extra_stylesheets %}{% endblock %}
         <meta charset="utf-8">
+
+        <style>
+        @font-face {
+            font-family: overpass-light;
+            src: url("{{ url_for('static', filename='fonts/Overpass-Light.ttf') }}");
+        }
+        </style>
     </head>
 
     <body>
         <div id="page-container">
-            <header>
+            <header id="main-header">
                 {% include 'header.html' %}
             </header>
 
-            <main>
+            <main id="main-content">
                 {% block main_content %}{% endblock %}
+                <footer id="main-footer">
+                    {% include 'footer.html' %}
+                </footer>
             </main>
-
-            <footer>
-                {% include 'footer.html' %}
-            </footer>
         </div>
     </body>
 </html>

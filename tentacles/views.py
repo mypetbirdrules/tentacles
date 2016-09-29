@@ -4,7 +4,7 @@ from tentacles import app
 
 @app.route("/")
 def index():
-    return render_template("index.html", title="Project Tentacles")
+    return render_template("index.html", title="The Tentacle Project")
 
 @app.route("/index")
 def index2():
@@ -17,3 +17,7 @@ def home():
 @app.route("/about")
 def about():
     return render_template("about.html", title="About Project Tentacles")
+
+@app.route("/upload")
+def upload():
+    return render_template("upload.html", title="Upload Video")

@@ -1,14 +1,10 @@
-<div id="left-header">
-    <h1>Project Tentacles</h1>
-</div>
+<h1>The Tentacle Project</h1>
 
-<div id="right-header">
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Upload</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-        </ul>
-    </nav>
-</div>
+<nav>
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="#">Videos</a></li>
+        <li><a href="{{ url_for('upload') }}">Upload</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+    </ul>
+</nav>
