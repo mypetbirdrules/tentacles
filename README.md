@@ -4,10 +4,10 @@
 
 ## Description
 
-The Tentacle Project is an effort led by a small team to construct a well-designed, lightweight interactive porn website. Tentacles makes minimal use of bloated, 
-modern web design frameworks and principles. Because we love freedom, we've imposed a limit on Javascript, meaning the website will work perfectly with extensions 
-like LibreJS and NoScript. Concerned about privacy? Don't be. The Tentacles project is fully devoted to user privacy. Unlike other porn sites, we don't bombard 
-users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use bloated server-side scripting libraries. 
+The Tentacle Project is an effort led by a small team to construct a well-designed, lightweight interactive porn website. Tentacles makes minimal use of bloated,
+modern web design frameworks and principles. Because we love freedom, we've imposed a limit on Javascript, meaning the website will work perfectly with extensions
+like LibreJS and NoScript. Concerned about privacy? Don't be. The Tentacles project is fully devoted to user privacy. Unlike other porn sites, we don't bombard
+users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use bloated server-side scripting libraries.
 
 ### How is it made?
 
@@ -17,7 +17,7 @@ users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use
 * Flask
 * Jinja2
 * SQLite3 (Extendable to more production-ready databases)
- 
+
 ---
 
 ## Design Concepts
@@ -30,11 +30,13 @@ users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use
 
 ## Non-production testing
 
-> Start Flask's built-in testing server
+> Start virtualenv, then Flask's built-in testing server
+
+> [user@~/tentacles/]$ source venv/bin/activate
 
 > [user@~/tentacles/]$ ./runserver.py
 
-> Open http://localhost:5000/ 
+> Open http://localhost:5000/
 
 ---
 
