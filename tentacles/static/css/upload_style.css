@@ -1,0 +1,107 @@
+#upload-video-form {
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #303030;
+}
+
+#upload-video-form .top-margin {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#upload-video-form input[type=file] {
+    display: none;
+}
+
+#upload-video-form .file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
+    background-color: #585858;
+}
+
+#upload-video-form .file-upload:hover {
+    background-color: #474747;
+}
+
+#upload-video-form .file-upload:active {
+    -webkit-transition: background-color 250ms;
+    -moz-transition: background-color 250ms;
+    -o-transition: background-color 250ms;
+    transition: background-color 250ms;
+    background-color: #3F3F3F;
+}
+
+#upload-video-form input[type=text] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-family: overpass-light;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid #585858; /* Have border here so when the focus border is active, size of box does not change */
+    background-color: #585858;
+}
+
+#upload-video-form input[type=text]:focus {
+    border: 3px solid #fff;
+}
+
+#upload-video-form textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    font-family: overpass-light;
+    color: white;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    border: 3px solid #585858; /* Have border here so when the focus border is active, size of box does not change */
+    background-color: #585858;
+}
+
+#upload-video-form textarea:focus {
+    border: 3px solid #fff;
+}
+
+#upload-video-form input[type=submit] {
+    margin-top: 5px;
+    padding: 10px 20px;
+    width: 20%;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    -webkit-transition: background-color 500ms;
+    -moz-transition: background-color 500ms;
+    -o-transition: background-color 500ms;
+    transition: background-color 500ms;
+    background-color: #585858;
+}
+
+#upload-video-form input[type=submit]:hover {
+    background-color: #474747;
+}
+
+#upload-video-form input[type=submit]:active {
+    -webkit-transition: background-color 250ms;
+    -moz-transition: background-color 250ms;
+    -o-transition: background-color 250ms;
+    transition: background-color 250ms;
+    background-color: #3F3F3F;
+}

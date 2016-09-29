@@ -22,11 +22,11 @@
 
             <main id="main-content">
                 {% block main_content %}{% endblock %}
+                
+                <footer id="main-footer">
+                    {% include 'footer.html' %}
+                </footer>
             </main>
-
-            <footer id="main-footer">
-                {% include 'footer.html' %}
-            </footer>
         </div>
     </body>
 </html>
