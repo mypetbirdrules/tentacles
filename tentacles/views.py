@@ -1,6 +1,22 @@
 #!/usr/bin/env python3
 from flask import Flask, render_template, redirect, url_for
 from tentacles import app
+import sqlite3
+
+def connectDB(dbPath):
+    try:
+        dbCon = sqlite3.connect(dbPath)
+        dbCursor = dbCon.cursor()
+        return (dbCon, dbCursor)
+    except:
+        return False
+
+def closeDBCon(dbConnectionObj):
+    try:
+        dbConnectionObj.commit()
+        dbConnectionObj.close()
+    except:
+        return False
 
 @app.route("/")
 def index():
