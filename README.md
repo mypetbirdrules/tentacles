@@ -20,7 +20,7 @@ users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use
 
 ---
 
-## Design Concepts
+## Design Concept Art
 
 ![diagram1.png](https://raw.githubusercontent.com/mypetbirdrules/tentacles/master/diagram.png)
 
@@ -30,13 +30,23 @@ users with advertisements. Tentacles is made with HTML5 and CSS3 and doesn't use
 
 ## Non-production testing
 
+### Permavirgin Method
+
 > Start virtualenv, then Flask's built-in testing server
 
 > [user@~/tentacles/]$ source venv/bin/activate
 
 > [user@~/tentacles/]$ ./runserver.py
 
-> Open http://localhost:5000/
+> Open http://127.0.0.1:5000/ in a web browser
+
+### Best Method
+
+> [user@~/tentacles/]$ ./runserver.py
+
+> Open http://127.0.0.1:5000/ in a web browser
+
+#### These methods assume your lo (loopback) interface address is 127.0.0.1/localhost
 
 ---
 
