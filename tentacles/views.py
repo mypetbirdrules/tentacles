@@ -5,12 +5,15 @@ import sqlite3
 import sys
 import os
 
+globalDatabasePath = os.path.join(app.root_path, "database/posts.sqlite3")
+
 # call on server start - good for testing and portability
 def tryInitDB(dbPath):
     try:
         dbCon = sqlite3.connect(dbPath)
         dbCursor = dbCon.cursor()
-        dbCursor.execute("CREATE TABLE pr0n IF NOT EXISTS pr0n(postTitle TEXT, postDescription TEXT, )")
+        # long-ass SQL query
+        dbCursor.execute("CREATE TABLE IF NOT EXISTS pr0n(postTitle TEXT, postDescription TEXT, category1 TEXT, category2 TEXT, category3 TEXT, yearUploaded SMALLINT, monthUploaded TINYINT, dayUploaded TINYINT, upCount BIGINT, downCount BIGINT);")
     except:
         sys.stderr.write("[FATAL] Error initializing connection to database\n")
         sys.stderr.write("Perhaps a faulty file path in config?\n")
@@ -36,11 +39,9 @@ def closeDBCon(dbConnectionSessionTuple):
     except:
         return False
 
-
-
 # initialize web server
-# initialize non-created database IF NOT EXISTS
-tryDBInit(os.path.join())
+# initialize non-created database if it doesn't exist
+tryInitDB(globalDatabasePath)
 
 @app.route("/")
 def index():
