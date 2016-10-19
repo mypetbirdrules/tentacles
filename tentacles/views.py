@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-from flask import Flask, render_template, redirect, url_for, g, sessions
+from flask import Flask, render_template, redirect, url_for, g, sessions, request
 from tentacles import app
 import sqlite3
 import sys
 import os
+
 
 globalDatabasePath = os.path.join(app.root_path, "database/posts.sqlite3")
 
@@ -59,6 +60,12 @@ def home():
 def about():
     return render_template("about.html", title="About Project Tentacles")
 
-@app.route("/upload")
-def upload():
-    return render_template("upload.html", title="Upload Video")
+@app.route("/search/", methods=['GET', 'POST'])
+def search():
+    if request.method == "POST":
+        search_string = request.form["video-search"]
+        print(search_string)
+    else:
+        print("Display results below!")
+    
+    return render_template("search.html", title="Search Videos")
