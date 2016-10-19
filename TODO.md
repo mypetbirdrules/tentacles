@@ -10,22 +10,36 @@
 
 ---
 
-## Ideas for Database Schema
+## Database
 
-> CREATE TABLE posts VALUES(postID integer primary key autoincrement, postTitle text, postDescription text, dateAdded text, categories integer)
+The database schema has been decided; it is as follows:
 
-### Categories can be stored as combinations of prime numbers, and multiple categories can fit into one number. For example:
+* postTitle		(VARCHAR)
+* postDescription	(VARCHAR)
+* category1		(VARCHAR)
+* category2		(VARCHAR)
+* category3		(VARCHAR)
+* videoSHA256SUM	(VARCHAR)
+* yearUploaded		(SMALLINT)
+* monthUploaded		(SMALLINT)
 
-> 3 = Asian
+## File Storage and Organization of Uploaded Material
 
-> 5 = BBC
+Each file will be stored in a folder named after each video's SHA256SUM value.
 
-> 7 = Lesbian
+#### Example
 
-### A video/image with all three of these attributes becomes:
-
-> 3 * 5 * 7 = 105 = Asian && BBC && Lesbian
-
+> ┌ Root Directory
+> │
+> ├── a628d9fe312d8c08dcbadda0ad6ffedc75e619b0fd1bdc6bd26de57858eeafb6
+> │
+> ├───── video.mkv
+> │      thumbnail.jpg
+> │
+> ├── e764a327e0882475762a5497ddb3f25f9d7b018395fae80b48969b1a59304358
+> │
+> └───── video.mkv
+> 	 thumbnail.jpg
 
 ---
 
@@ -40,11 +54,11 @@
 
 * A flexbox container needs to be setup and styled around the Jinja2 {% for post in posts %} statement
 * The flexbox container needs to be styled with css
-* We still need a working database schema
+* ~~We still need a working database schema~~
 * It may be advantageous to switch the site design to a light material theme to highlight each postObject
 * We need an HTML text input field for a search function
 * We need an HTML drop down menu to select from categories
 * We need an HTML drop down menu to select from popularity
 * We need a script to add videos to the database
-
+	
 ---
