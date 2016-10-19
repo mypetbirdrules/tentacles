@@ -30,15 +30,25 @@ Each file will be stored in a folder named after each video's SHA256SUM value.
 #### Example
 
 > ┌ Root Directory
+
 > │
+
 > ├── a628d9fe312d8c08dcbadda0ad6ffedc75e619b0fd1bdc6bd26de57858eeafb6
+
 > │
+
 > ├───── video.mkv
+
 > │      thumbnail.jpg
+
 > │
+
 > ├── e764a327e0882475762a5497ddb3f25f9d7b018395fae80b48969b1a59304358
+
 > │
+
 > └───── video.mkv
+
 > 	 thumbnail.jpg
 
 ---
