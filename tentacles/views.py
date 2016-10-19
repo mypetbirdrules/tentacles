@@ -14,7 +14,7 @@ def tryInitDB(dbPath):
         dbCon = sqlite3.connect(dbPath)
         dbCursor = dbCon.cursor()
         # long-ass SQL query
-        dbCursor.execute("CREATE TABLE IF NOT EXISTS pr0n(postTitle TEXT, postDescription TEXT, category1 TEXT, category2 TEXT, category3 TEXT, yearUploaded SMALLINT, monthUploaded TINYINT, dayUploaded TINYINT, upCount BIGINT, downCount BIGINT);")
+        dbCursor.execute("CREATE TABLE IF NOT EXISTS pr0n(postTitle TEXT, postDescription TEXT, category1 TEXT, category2 TEXT, category3 TEXT, sha256hash TEXT, yearUploaded SMALLINT, monthUploaded TINYINT, dayUploaded TINYINT, upCount BIGINT, downCount BIGINT);")
     except:
         sys.stderr.write("[FATAL] Error initializing connection to database\n")
         sys.stderr.write("Perhaps a faulty file path in config?\n")
