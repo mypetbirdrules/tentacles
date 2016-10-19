@@ -32,13 +32,22 @@ def connectDB(dbPath):
 
 def closeDBCon(dbConnectionSessionTuple):
     try:
+        # save and stop dbCursor
         dbConnectionSessionTuple[1].commit()
         dbConnectionSessionTuple[1].close()
 
+        # save and stop dbCon
         dbConnectionSessionTuple[0].commit()
         dbConnectionSessionTuple[0].close()
     except:
         return False
+
+def searchQueryDB(dbConTuple, searchString, categoryFilter1, categoryFilter2, categoryFilter3, resultLimit):
+    searchTermList = searchString.split(" ")
+    resultSet = []
+
+    for searchTerm in searchTermList:
+        resultSet = resultSet + dbConTuple[1].execute("SELECT postTitle, postDescription, category1, category2, category3, sha256hash, yearUploaded, monthUploaded, dayUploaded, upCount, downCount FROM pr0n WHERE (postTitle LIKE "%?%" AND postDescription LIKE )")
 
 # initialize web server
 # initialize non-created database if it doesn't exist
