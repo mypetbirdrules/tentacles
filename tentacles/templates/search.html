@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block extra_stylesheets %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/search_style.css') }}">
+{% endblock %}
+
+{% block main_content %}
+    <form id="search-videos-form">
+        <label class="search-videos-label" for="video-search">Search: </label>
+        <input name="video-search" type="text" /><br>
+        <!--<input type="submit" value="Search">-->
+    </form>
+{% endblock %}
