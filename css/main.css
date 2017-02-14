@@ -1,0 +1,78 @@
+/* Include fonts here */
+@font-face {
+    font-family: overpass-light;
+    src: url("../fonts/overpass-light.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: overpass-light;
+    background-color: #1A1A1A;
+}
+
+/* Nav bar */
+#navbar {
+    color: #D81B60;
+    background-color: #212121;
+    line-height: 50px;
+
+    box-shadow: 0 3px 5px #131313;
+}
+
+#header {
+    padding: 25px 0;
+    float: left;
+    background-color: #AD1457;
+    border-bottom: 5px solid #AD1457; /* Needed because of the border hover effects on the nav list items */
+    width: 25%;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+#nav-links {
+    width: 75%;
+}
+
+#nav-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    left: 37.5%;
+    overflow: hidden;
+}
+
+#nav-links li {
+    float: left;
+}
+
+#nav-links a {
+    padding: 25px;
+    display: block;
+    color: #D81B60;
+    text-decoration: none;
+    border-bottom: 5px solid #212121;
+
+    transition: 500ms ease;
+    -webkit-transition: 500ms ease;
+    -moz-transition: 500ms ease;
+    -o-transition: 500ms ease;
+}
+
+#nav-links a:hover {
+    border-bottom: 5px solid #D81B60;
+}
+
+#nav-links a.active {
+    border-bottom: 5px solid #EC407A;
+}
+
+#nav-links a.right {
+    float: right;
+}
