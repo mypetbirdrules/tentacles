@@ -13,9 +13,9 @@ body {
 
 /* Nav bar */
 #navbar {
-    color: #D81B60;
+    color: #AD1457;
     background-color: #212121;
-    line-height: 50px;
+    line-height: 10px;
 
     box-shadow: 0 3px 5px #131313;
 }
@@ -24,8 +24,13 @@ body {
     padding: 25px 0;
     float: left;
     background-color: #AD1457;
-    border-bottom: 5px solid #AD1457; /* Needed because of the border hover effects on the nav list items */
-    width: 25%;
+    width: 40%;
+}
+
+#header:after { /* Needed because of the border hover effects. Height here must match height of "nav-links li:after"  */
+	content: '';
+	display: block;
+	height: 5px;
 }
 
 #header h1 {
@@ -35,16 +40,11 @@ body {
     color: white;
 }
 
-#nav-links {
-    width: 75%;
-}
-
 #nav-links ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     position: relative;
-    left: 37.5%;
     overflow: hidden;
 }
 
@@ -52,25 +52,36 @@ body {
     float: left;
 }
 
+#nav-links li:after {
+	content: '';
+	display: block;
+	margin: auto; /* Needed to make border slide middle out */
+	height: 5px;
+	width: 0px;
+	background: transparent;
+	
+	transition: 250ms ease;
+	-webkit-transition: 250ms ease;
+	-moz-transition: 250ms ease;
+	-o-transition: 250ms ease;
+}
+
+#nav-links li:hover:after {
+	width: 100%;
+	background-color: #AD1457;
+}
+
 #nav-links a {
     padding: 25px;
     display: block;
-    color: #D81B60;
+    color: #AD1457;
     text-decoration: none;
-    border-bottom: 5px solid #212121;
+    /*border-bottom: 5px solid #212121;*/
 
     transition: 500ms ease;
     -webkit-transition: 500ms ease;
     -moz-transition: 500ms ease;
     -o-transition: 500ms ease;
-}
-
-#nav-links a:hover {
-    border-bottom: 5px solid #D81B60;
-}
-
-#nav-links a.active {
-    border-bottom: 5px solid #EC407A;
 }
 
 #nav-links a.right {
